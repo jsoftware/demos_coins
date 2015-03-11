@@ -6,9 +6,9 @@ DESCRIPTION=: 0 : 0
 This is a sample project based on the coins demo.
 )
 
-VERSION=: '1.0.2'
+VERSION=: '1.0.3'
 
-RELEASE=: 'j803'
+RELEASE=: 'j803 j804'
 
 DEPENDS=: 0 : 0
 graphics/gl2
