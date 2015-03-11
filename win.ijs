@@ -36,7 +36,7 @@ coin_run=: 3 : 0
 DONE=: 0
 wd ('minwh 500 500';'minwh 300 300')&stringreplace^:('Android'-:UNAME) COIN
 setparentname''
-wd 'pshow;pshow sw_hide'
+wd 'pshow hide'
 paint''
 wd 'pshow;'
 )
