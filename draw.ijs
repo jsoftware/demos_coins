@@ -19,7 +19,8 @@ wd 'set cnt text ',":BUFNDX
 wd 'setenable restart ',":COUNT > 0
 wd 'setenable undo ',":BUFNDX > 0
 wd 'setenable redo ',":BUFNDX < COUNT
-wd ; ';set '&, each BOARDIDS ,each (<' checked ') ,each ": each BOARD=i.#BOARDS
+NB. android optionmenu not yet created
+wd^:(-.IFJA) ; ';set '&, each BOARDIDS ,each (<' checked ') ,each ": each BOARD=i.#BOARDS
 wd 'setfocus g'
 getmoves''
 ACTIVECTR=: ACTIVE { CTR

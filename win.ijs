@@ -63,11 +63,7 @@ rem form end;
 NB. =========================================================
 coin_run=: 3 : 0
 DONE=: 0
-if. IFJA do.
-  wd COINJA
-else.
-  wd ('minwh 500 500';'minwh 300 300')&stringreplace^:('Android'-:UNAME) COIN
-end.
+wd IFJA{::COIN;COINJA
 setparentname''
 wd 'pshow;'
 )
