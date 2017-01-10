@@ -6,7 +6,7 @@ DESCRIPTION=: 0 : 0
 This is a sample project based on the coins demo.
 )
 
-VERSION=: '1.0.9'
+VERSION=: '1.0.10'
 
 RELEASE=: 'j804 j805'
 
