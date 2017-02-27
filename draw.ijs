@@ -51,7 +51,7 @@ drawhighs=: 3 : 0
 for_p. HIGH do.
   'c x'=. p
   glbrush glrgb c { CLRHIGH
-  glrect x { CRC2
+  glrect"1 x { CRC2
 end.
 )
 
@@ -65,14 +65,14 @@ mxy=. MOVECLR </. MOVEPOS
 NB. lines
 for_i. i.#mxy do.
   glpen FATPEN [ glrgb i { CLRSTD
-  gllines ,"2 CTR {~ i pick mxy
+  gllines"1 ,"2 CTR {~ i pick mxy
 end.
 
 NB. vertices
 CRC=: (CTR-RAD) ,"1 +:RAD,RAD
 glpen 1,PS_SOLID [ glrgb 0 0 0
 glbrush glrgb 255 255 255
-glrect CRC
+glrect"1 CRC
 
 NB. end vertex
 glpen FATPEN [ glrgb {.CLRSTD
@@ -83,6 +83,6 @@ glpen 1,PS_SOLID [ glrgb 0 0 0
 CRC2=: (CTR-RAD2) ,"1 +:RAD2,RAD2
 for_i. i.#mxy do.
   glbrush glrgb i { CLRSTD
-  glrect (i lookup POS) { CRC2
+  glrect"1 (i lookup POS) { CRC2
 end.
 )
