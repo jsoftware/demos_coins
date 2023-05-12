@@ -1,5 +1,5 @@
 
-load '~Demos/release/coins.ijs'
+load '~Demos/coins/coins.ijs'
 
 NB. try BOARD=1, 2 or 3
 BOARD=: 0

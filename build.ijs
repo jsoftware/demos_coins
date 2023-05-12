@@ -1,2 +1,2 @@
 
-writesourcex_jp_ '~Demos/coins';'~Demos/release/coins.ijs'
+writesourcex_jp_ '~Demos/coins';'~Demos/coins/coins.ijs'
