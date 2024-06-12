@@ -4,6 +4,7 @@ getnum=: 3 : '".;._2 [ 0 : 0'
 index1=: # (| - =) i.&1
 intersect=: e. # [
 intable=: +./"1 @: =
+ischar=: 2 = 3!:0
 isempty=: 0: e. $
 lookup=: (= {."1) # {:"1@]
 round=: [ * [: <. 0.5"_ + %~
